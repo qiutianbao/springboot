@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="boot-freemarker" />
+        <module name="boot-jpa" />
+        <module name="boot-struts2" />
+        <module name="boot-thymeleaf" />
+        <module name="springboot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="boot-angularjs" target="1.8" />
+      <module name="boot-freemarker" target="1.8" />
+      <module name="boot-jpa" target="1.8" />
+      <module name="boot-jsp" target="1.8" />
+      <module name="boot-redis" target="1.8" />
+      <module name="boot-struts2" target="1.8" />
+      <module name="boot-test" target="1.8" />
+      <module name="boot-thymeleaf" target="1.8" />
+      <module name="boot-velocity" target="1.8" />
+      <module name="bootjspboot-jsp" target="1.8" />
+      <module name="springboot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
