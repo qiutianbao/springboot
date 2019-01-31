@@ -17,6 +17,9 @@
         <module>dubbo-client</module>
         <module>dubbo-server</module>
         <module>dubbo-api</module>
+        <module>boot-security</module>
+        <module>boot-shiro</module>
+        <module>boot-swagger2</module>
     </modules>
 
 

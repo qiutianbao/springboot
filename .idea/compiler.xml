@@ -8,7 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="boot-freemarker" />
         <module name="boot-jpa" />
+        <module name="boot-security" />
+        <module name="boot-shiro" />
         <module name="boot-struts2" />
+        <module name="boot-swagger2" />
         <module name="boot-thymeleaf" />
         <module name="dubbo-api" />
         <module name="dubbo-client" />
@@ -21,7 +24,10 @@
       <module name="boot-jpa" target="1.8" />
       <module name="boot-jsp" target="1.8" />
       <module name="boot-redis" target="1.8" />
+      <module name="boot-security" target="1.8" />
+      <module name="boot-shiro" target="1.8" />
       <module name="boot-struts2" target="1.8" />
+      <module name="boot-swagger2" target="1.8" />
       <module name="boot-test" target="1.8" />
       <module name="boot-thymeleaf" target="1.8" />
       <module name="boot-velocity" target="1.8" />
