@@ -10,7 +10,9 @@
         <module name="boot-jpa" />
         <module name="boot-struts2" />
         <module name="boot-thymeleaf" />
-        <module name="springboot" />
+        <module name="dubbo-api" />
+        <module name="dubbo-client" />
+        <module name="dubbo-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,7 +26,12 @@
       <module name="boot-thymeleaf" target="1.8" />
       <module name="boot-velocity" target="1.8" />
       <module name="bootjspboot-jsp" target="1.8" />
-      <module name="springboot" target="1.8" />
+      <module name="dubbo-api" target="1.5" />
+      <module name="dubbo-client" target="1.8" />
+      <module name="dubbo-server" target="1.8" />
+      <module name="springboot" target="1.5" />
+      <module name="springboot_dubbo_client" target="1.8" />
+      <module name="springboot_dubbo_server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

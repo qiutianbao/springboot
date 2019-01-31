@@ -8,6 +8,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/boot-struts2/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
