@@ -21,6 +21,7 @@
         <module>boot-shiro</module>
         <module>boot-swagger2</module>
         <module>boot-redis</module>
+        <module>boot-rabbitmq</module>
     </modules>
 
 

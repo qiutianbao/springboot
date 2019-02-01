@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="boot-freemarker" />
         <module name="boot-jpa" />
+        <module name="boot-rabbitmq" />
         <module name="boot-redis" />
         <module name="boot-security" />
         <module name="boot-shiro" />
@@ -24,6 +25,7 @@
       <module name="boot-freemarker" target="1.8" />
       <module name="boot-jpa" target="1.8" />
       <module name="boot-jsp" target="1.8" />
+      <module name="boot-rabbitmq" target="1.8" />
       <module name="boot-redis" target="1.8" />
       <module name="boot-security" target="1.8" />
       <module name="boot-shiro" target="1.8" />
