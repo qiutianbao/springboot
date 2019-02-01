@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/boot-security/pom.xml" />
         <option value="$PROJECT_DIR$/boot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-velocity/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -20,7 +21,6 @@
         <option value="$PROJECT_DIR$/boot-angularjs/pom.xml" />
         <option value="$PROJECT_DIR$/boot-jsp/pom.xml" />
         <option value="$PROJECT_DIR$/boot-test/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-velocity/pom.xml" />
         <option value="$PROJECT_DIR$/bootjspboot-jsp/pom.xml" />
       </set>
     </option>

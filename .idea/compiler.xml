@@ -15,6 +15,7 @@
         <module name="boot-struts2" />
         <module name="boot-swagger2" />
         <module name="boot-thymeleaf" />
+        <module name="boot-velocity" />
         <module name="dubbo-api" />
         <module name="dubbo-client" />
         <module name="dubbo-server" />
