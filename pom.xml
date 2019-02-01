@@ -20,6 +20,7 @@
         <module>boot-security</module>
         <module>boot-shiro</module>
         <module>boot-swagger2</module>
+        <module>boot-redis</module>
     </modules>
 
 

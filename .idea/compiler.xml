@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="boot-freemarker" />
         <module name="boot-jpa" />
+        <module name="boot-redis" />
         <module name="boot-security" />
         <module name="boot-shiro" />
         <module name="boot-struts2" />

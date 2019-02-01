@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/boot-freemarker/boot-freemarker.iml" filepath="$PROJECT_DIR$/boot-freemarker/boot-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-jpa/boot-jpa.iml" filepath="$PROJECT_DIR$/boot-jpa/boot-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-redis/boot-redis.iml" filepath="$PROJECT_DIR$/boot-redis/boot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-security/boot-security.iml" filepath="$PROJECT_DIR$/boot-security/boot-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-shiro/boot-shiro.iml" filepath="$PROJECT_DIR$/boot-shiro/boot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-struts2/boot-struts2.iml" filepath="$PROJECT_DIR$/boot-struts2/boot-struts2.iml" />
