@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "provinceId": "1",
+    "cityName": "上海",
+    "description": "上海中国的直辖市"
+  },
+  {
+    "id": "2",
+    "provinceId": "2",
+    "cityName": "北京",
+    "description": "北京是中国首都"
+  }
+]

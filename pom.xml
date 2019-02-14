@@ -23,6 +23,8 @@
         <module>boot-redis</module>
         <module>boot-rabbitmq</module>
         <module>boot-velocity</module>
+        <module>boot-angular</module>
+        <module>boot-webflux</module>
     </modules>
 
 

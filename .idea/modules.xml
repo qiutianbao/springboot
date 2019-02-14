@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/boot-angular/boot-angular.iml" filepath="$PROJECT_DIR$/boot-angular/boot-angular.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-freemarker/boot-freemarker.iml" filepath="$PROJECT_DIR$/boot-freemarker/boot-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-jpa/boot-jpa.iml" filepath="$PROJECT_DIR$/boot-jpa/boot-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-rabbitmq/boot-rabbitmq.iml" filepath="$PROJECT_DIR$/boot-rabbitmq/boot-rabbitmq.iml" />
@@ -12,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/boot-swagger2/boot-swagger2.iml" filepath="$PROJECT_DIR$/boot-swagger2/boot-swagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-thymeleaf/boot-thymeleaf.iml" filepath="$PROJECT_DIR$/boot-thymeleaf/boot-thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-velocity/boot-velocity.iml" filepath="$PROJECT_DIR$/boot-velocity/boot-velocity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-webflux/boot-webflux.iml" filepath="$PROJECT_DIR$/boot-webflux/boot-webflux.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/dubbo-api/dubbo-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-client/dubbo-client.iml" filepath="$PROJECT_DIR$/dubbo-client/dubbo-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-server/dubbo-server.iml" filepath="$PROJECT_DIR$/dubbo-server/dubbo-server.iml" />
