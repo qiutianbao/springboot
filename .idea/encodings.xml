@@ -14,6 +14,7 @@
     <file url="file://$PROJECT_DIR$/boot-thymeleaf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-velocity" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-webflux" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-webflux-mongodb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-server" charset="UTF-8" />

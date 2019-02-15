@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/boot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/boot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/boot-velocity/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-webflux-mongodb/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

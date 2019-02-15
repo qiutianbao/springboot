@@ -25,6 +25,7 @@
         <module>boot-velocity</module>
         <module>boot-angular</module>
         <module>boot-webflux</module>
+        <module>boot-webflux-mongodb</module>
     </modules>
 
 

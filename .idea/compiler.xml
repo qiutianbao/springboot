@@ -18,6 +18,7 @@
         <module name="boot-thymeleaf" />
         <module name="boot-velocity" />
         <module name="boot-webflux" />
+        <module name="boot-webflux-mongodb" />
         <module name="dubbo-api" />
         <module name="dubbo-client" />
         <module name="dubbo-server" />
@@ -39,6 +40,7 @@
       <module name="boot-thymeleaf" target="1.8" />
       <module name="boot-velocity" target="1.8" />
       <module name="boot-webflux" target="1.8" />
+      <module name="boot-webflux-mongodb" target="1.8" />
       <module name="bootjspboot-jsp" target="1.8" />
       <module name="dubbo-api" target="1.5" />
       <module name="dubbo-client" target="1.8" />
