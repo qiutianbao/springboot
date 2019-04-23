@@ -1,0 +1,3 @@
+server:
+  context-path: /boot-beetl
+  port: 8080

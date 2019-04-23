@@ -6,9 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="boot-admin-client" />
+        <module name="boot-admin-server" />
         <module name="boot-angular" />
+        <module name="boot-batch" />
+        <module name="boot-beetl" />
         <module name="boot-freemarker" />
         <module name="boot-jpa" />
+        <module name="boot-mybatis" />
         <module name="boot-rabbitmq" />
         <module name="boot-redis" />
         <module name="boot-security" />
@@ -19,17 +24,24 @@
         <module name="boot-velocity" />
         <module name="boot-webflux" />
         <module name="boot-webflux-mongodb" />
+        <module name="boot-webflux-redis" />
         <module name="dubbo-api" />
         <module name="dubbo-client" />
         <module name="dubbo-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="boot-admin" target="1.8" />
+      <module name="boot-admin-client" target="1.8" />
+      <module name="boot-admin-server" target="1.8" />
       <module name="boot-angular" target="1.8" />
       <module name="boot-angularjs" target="1.8" />
+      <module name="boot-batch" target="1.8" />
+      <module name="boot-beetl" target="1.8" />
       <module name="boot-freemarker" target="1.8" />
       <module name="boot-jpa" target="1.8" />
       <module name="boot-jsp" target="1.8" />
+      <module name="boot-mybatis" target="1.8" />
       <module name="boot-rabbitmq" target="1.8" />
       <module name="boot-redis" target="1.8" />
       <module name="boot-security" target="1.8" />
@@ -41,6 +53,7 @@
       <module name="boot-velocity" target="1.8" />
       <module name="boot-webflux" target="1.8" />
       <module name="boot-webflux-mongodb" target="1.8" />
+      <module name="boot-webflux-redis" target="1.8" />
       <module name="bootjspboot-jsp" target="1.8" />
       <module name="dubbo-api" target="1.5" />
       <module name="dubbo-client" target="1.8" />

@@ -26,6 +26,12 @@
         <module>boot-angular</module>
         <module>boot-webflux</module>
         <module>boot-webflux-mongodb</module>
+        <module>boot-webflux-redis</module>
+        <module>boot-mybatis</module>
+        <module>boot-beetl</module>
+        <module>boot-admin-server</module>
+        <module>boot-admin-client</module>
+        <module>boot-batch</module>
     </modules>
 
 

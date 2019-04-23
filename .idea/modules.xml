@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/boot-admin-client/boot-admin-client.iml" filepath="$PROJECT_DIR$/boot-admin-client/boot-admin-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-admin-server/boot-admin-server.iml" filepath="$PROJECT_DIR$/boot-admin-server/boot-admin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-angular/boot-angular.iml" filepath="$PROJECT_DIR$/boot-angular/boot-angular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-batch/boot-batch.iml" filepath="$PROJECT_DIR$/boot-batch/boot-batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-beetl/boot-beetl.iml" filepath="$PROJECT_DIR$/boot-beetl/boot-beetl.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-freemarker/boot-freemarker.iml" filepath="$PROJECT_DIR$/boot-freemarker/boot-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-jpa/boot-jpa.iml" filepath="$PROJECT_DIR$/boot-jpa/boot-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-mybatis/boot-mybatis.iml" filepath="$PROJECT_DIR$/boot-mybatis/boot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-rabbitmq/boot-rabbitmq.iml" filepath="$PROJECT_DIR$/boot-rabbitmq/boot-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-redis/boot-redis.iml" filepath="$PROJECT_DIR$/boot-redis/boot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-security/boot-security.iml" filepath="$PROJECT_DIR$/boot-security/boot-security.iml" />
@@ -15,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/boot-velocity/boot-velocity.iml" filepath="$PROJECT_DIR$/boot-velocity/boot-velocity.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-webflux/boot-webflux.iml" filepath="$PROJECT_DIR$/boot-webflux/boot-webflux.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-webflux-mongodb/boot-webflux-mongodb.iml" filepath="$PROJECT_DIR$/boot-webflux-mongodb/boot-webflux-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-webflux-redis/boot-webflux-redis.iml" filepath="$PROJECT_DIR$/boot-webflux-redis/boot-webflux-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/dubbo-api/dubbo-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-client/dubbo-client.iml" filepath="$PROJECT_DIR$/dubbo-client/dubbo-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-server/dubbo-server.iml" filepath="$PROJECT_DIR$/dubbo-server/dubbo-server.iml" />
