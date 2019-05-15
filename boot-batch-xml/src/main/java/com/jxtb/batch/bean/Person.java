@@ -9,7 +9,15 @@ import lombok.Data;
 public class Person {
     private int id;
     private String name;
-    private int age;
+    private String age;
     private String nation;
     private String address;
+
+    public Person(int id, String name, String age, String nation, String address) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.nation = nation;
+        this.address = address;
+    }
 }

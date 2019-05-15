@@ -27,6 +27,7 @@ public class MybatisController {
 
     //http://localhost:8080/showCommodity?id=15
     @RequestMapping("/showCommodity")
+
     public Commodity toIndex(HttpServletRequest request, Model model){
         int userId = Integer.parseInt(request.getParameter("id"));
         Commodity user = this.commodityService.getCommodityById(userId);
@@ -34,3 +35,7 @@ public class MybatisController {
     }
 
 }
+
+
+
+

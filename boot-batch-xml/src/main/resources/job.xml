@@ -11,33 +11,17 @@
         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd">
 
-    <bean id="reader" class="org.springframework.batch.item.file.FlatFileItemReader">
-        <property name="resource" value="data/Person.txt"></property>
-        <property name="lineMapper" ref="lineMapper"></property>
-        <property name="linesToSkip" value="1"></property>
-    </bean>
 
-    <bean id="lineMapper" class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
-        <property name="lineTokenizer" ref="lineTokenizer"></property>
-        <property name="fieldSetMapper" ref="fieldSetMapper"></property>
-    </bean>
-
-    <bean id="lineTokenizer" class="org.springframework.batch.item.file.transform.DelimitedLineTokenizer">
-        <property name="names" value="ID,NAME,AGE,NATION,ADDRESS"></property>
-    </bean>
-    <bean id="fieldSetMapper" class="com.jxtb.batch.UserFieldSetMapper"></bean>
-
-    <bean id="process" class="com.jxtb.batch.process.PersonProcessor"></bean>
-    <bean id="write" class="com.jxtb.batch.writer.PersonWriter"></bean>
+    <import resource="step.xml"/>
 
     <!-- 选用内存级别的数据库，不在需要用oracle、mysql等数据库,采用h2数据库，不需要手动配置，只需要的pom.xml文件中引入h2即可 -->
     <bean id="jobRepository" class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean">
-        <property name="transactionManager" ref="transactionManager"></property>
+        <property name="transactionManager" ref="transactionManager"/>
     </bean>
-    <bean id="executor" class="org.springframework.core.task.SimpleAsyncTaskExecutor"></bean>
+    <bean id="executor" class="org.springframework.core.task.SimpleAsyncTaskExecutor"/>
     <bean id="laucher" class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
-        <property name="jobRepository" ref="jobRepository"></property>
-        <property name="taskExecutor" ref="executor"></property>
+        <property name="jobRepository" ref="jobRepository"/>
+        <property name="taskExecutor" ref="executor"/>
     </bean>
     <bean id="transactionManager" class="org.springframework.batch.support.transaction.ResourcelessTransactionManager"/>
 
