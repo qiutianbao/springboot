@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+    <service id="hello">
+        <class-name>com.jxtb.dubbo.HelloService</class-name>
+        <method-name>SayHello</method-name>
+        <key-property-name>custId</key-property-name>
+        <key-property-type>I</key-property-type>
+        <isCustId>0</isCustId>
+        <system-name>DUBBO</system-name>
+        <request-protocol>json</request-protocol>
+        <filter-def>
+            <list>
+                <value>com.jxtb.sdk.filters.LookupFilter</value>
+            </list>
+        </filter-def>
+    </service>
+</services>
