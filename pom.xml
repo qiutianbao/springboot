@@ -34,6 +34,10 @@
         <module>boot-admin-server</module>
         <module>boot-admin-client</module>
         <module>boot-batch</module>
+        <module>boot-batch-common</module>
+        <module>boot-batch-jxtb</module>
+        <module>boot-batch-xml</module>
+
     </modules>
 
 

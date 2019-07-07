@@ -2,12 +2,16 @@ package com.jxtb.web;
 
 import com.jxtb.sdk.*;
 import com.jxtb.sdk.config.ConfigurationManager;
+import com.jxtb.sdk.context.ApplicationContextHolder;
 import com.jxtb.sdk.core.Request;
 import com.jxtb.sdk.core.Response;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,6 +41,12 @@ public class HttpGatWayService extends HttpServlet{
     @Override
     public void init() throws ServletException {
         try{
+            logger.debug("start to intitail ");
+            // 获取ApplicationContext
+//            ServletContext application = getServletContext();
+//            ApplicationContext context = WebApplicationContextUtils
+//                    .getWebApplicationContext(application);
+//            ApplicationContextHolder.setContext(context);
             process = ConfigurationManager.getInstance().config();
         }catch (Exception e){
             ;

@@ -1,4 +1,4 @@
-package com.jxtb.batch.bean;
+package com.jxtb.batch.model;
 
 import lombok.Data;
 

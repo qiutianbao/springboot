@@ -1,6 +1,6 @@
 package com.jxtb.batch.reader;
 
-import com.jxtb.batch.bean.Person;
+import com.jxtb.batch.model.Person;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.validation.BindException;

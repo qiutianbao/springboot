@@ -1,6 +1,6 @@
 package com.jxtb.batch.config;
 
-import com.jxtb.batch.bean.Person;
+import com.jxtb.batch.model.Person;
 import org.springframework.batch.item.validator.ValidatingItemProcessor;
 import org.springframework.batch.item.validator.ValidationException;
 

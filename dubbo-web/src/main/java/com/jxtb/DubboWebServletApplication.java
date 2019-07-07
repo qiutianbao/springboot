@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ServletComponentScan // 在SppringBoot启动时扫描@WebServlet，并将该类实例化
-//@ImportResource({"classpath*:spring/*.xml"})
+@ImportResource({"classpath*:spring/*.xml"})
 public class DubboWebServletApplication {
     public static void main(String[] args) {
         SpringApplication.run(DubboWebServletApplication.class, args);

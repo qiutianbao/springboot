@@ -1,4 +1,4 @@
-package com.jxtb.redis;
+package com.jxtb.batch.common.utils.redis;
 
 import java.util.List;
 import java.util.Set;
@@ -132,4 +132,5 @@ public interface CacheOperation {
      * @return
      */
     long decrByValue(String key, long value);
+
 }

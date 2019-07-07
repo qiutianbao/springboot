@@ -1,6 +1,6 @@
 package com.jxtb.batch.config;
 
-import com.jxtb.batch.bean.Person;
+import com.jxtb.batch.model.Person;
 import com.jxtb.batch.listener.CsvJobListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;

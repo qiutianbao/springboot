@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:batch="http://www.springframework.org/schema/batch"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd">
+
+
+    <!--批量上传-->
+        <!--reader-->
+    <bean id="rPerson" class="com.jxtb.batch.reader.PersonReader" scope="step"/>
+        <!--process-->
+    <bean id="pPerson" class="com.jxtb.batch.process.PersonProcess" scope="step"/>
+        <!--writer-->
+    <bean id="wPerson" class="com.jxtb.batch.common.writer.FileItemWriter" scope="step">
+          <property name="fileDetailClass" value="com.jxtb.batch.item.PersonItem"/>
+        <property name="resource" ref="fPerson"/>
+        <property name="seperator" value="|"/>
+    </bean>
+        <!--local路径-->
+    <bean id="fPerson" class="com.jxtb.batch.common.utils.sdk.BatchFileResourceFactoryBean" scope="step">
+        <description>人员信息文件</description>
+        <property name="filePath" value="/home/batch/data/output/#{jobParameters['date']}/person_#{jobParameters['date']}.txt"/>
+    </bean>
+        <!--sftp路径-->
+    <bean id="ePerson" class="com.jxtb.batch.common.utils.sdk.ExportResourceTask" scope="step">
+        <property name="resources" ref="fPerson"/>
+        <property name="remoteDirEnum" value="#{T(com.jxtb.batch.common.enums.ConfigTypeEnum).SFTP_SFTP_REMOTE.code}"/>
+        <property name="sftpConfEnum" value="#{T(com.jxtb.batch.common.enums.ConfigTypeEnum).SFTP_SFTP_REMOTE.code}"/>
+        <property name="remoteFileNamePrefix" value="person/#{jobParameters['date']}/"/>
+        <property name="includeOkFile" value="true"/>
+        <property name="commonConfigService" ref="jxtbConfigService"/>
+    </bean>
+
+
+</beans>

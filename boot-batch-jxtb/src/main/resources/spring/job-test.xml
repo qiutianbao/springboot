@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:batch="http://www.springframework.org/schema/batch"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch.xsd">
+
+
+  <import resource="step/step.xml"/>
+
+    <batch:job id="testJob">
+        <batch:split id="personSplit" task-executor="jobExecuter">
+            <batch:flow>
+                <batch:step parent="stepTemplate" id="personOneStep" next="exportOnePerson">
+                    <batch:tasklet>
+                        <batch:chunk reader="rPerson" processor="pPerson" writer="wPerson"
+                                     commit-interval="50"/>
+                    </batch:tasklet>
+                </batch:step>
+                <batch:step parent="stepTemplate" id="exportOnePerson">
+                    <batch:tasklet ref="ePerson"/>
+                </batch:step>
+            </batch:flow>
+
+            <batch:flow>
+                <batch:step parent="stepTemplate" id="personTwoStep" next="exportTwoPerson">
+                    <batch:tasklet>
+                        <batch:chunk reader="rPerson" processor="pPerson" writer="wPerson"
+                                     commit-interval="50"/>
+                    </batch:tasklet>
+                </batch:step>
+                <batch:step parent="stepTemplate" id="exportTwoPerson">
+                    <batch:tasklet ref="ePerson"/>
+                </batch:step>
+            </batch:flow>
+        </batch:split>
+    </batch:job>
+
+</beans>

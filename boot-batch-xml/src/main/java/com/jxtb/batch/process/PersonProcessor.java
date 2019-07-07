@@ -1,6 +1,6 @@
 package com.jxtb.batch.process;
 
-import com.jxtb.batch.bean.Person;
+import com.jxtb.batch.model.Person;
 import org.springframework.batch.item.ItemProcessor;
 
 /**

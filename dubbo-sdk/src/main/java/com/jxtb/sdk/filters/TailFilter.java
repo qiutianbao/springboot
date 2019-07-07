@@ -22,7 +22,7 @@ public class TailFilter extends BaseFilter implements Filter{
 
     private static final Logger logger = LoggerFactory.getLogger(TailFilter.class);
     private Map<String, Class<?>> clazzMapping = new HashMap<>();
-    private Map<String, Method> methodMapping = new HashMap<>();
+    private static Map<String, Method> methodMapping = new HashMap<>();
 
     @Override
     public void invoke(String requestParam) {
@@ -57,13 +57,7 @@ public class TailFilter extends BaseFilter implements Filter{
             long st = System.currentTimeMillis();
             String response = (String)method.invoke(service, jsonObject.toJSONString());
             logger.error("invoke={}", (System.currentTimeMillis() - st));
-            String serviceId = jsonObject.getJSONObject(HEAD).getString("serviceId");
-            if("04C029".equals(serviceId)){
-                //电子签章接口日志文件过大，需要特殊处理
-                SendResponseFactory.createSendResponse(RequestContext.getResponse()).sendECfcaMessage(response);
-            }else{
-                SendResponseFactory.createSendResponse(RequestContext.getResponse()).sendMessage(response);
-            }
+            SendResponseFactory.createSendResponse(RequestContext.getResponse()).sendMessage(response);
         }catch (Throwable e){
             e.printStackTrace();
             logger.error("调用服务发生错误", e);
@@ -82,8 +76,8 @@ public class TailFilter extends BaseFilter implements Filter{
         String firstChar = clazzName.substring(0, 1).toLowerCase();
         String end = clazzName.substring(1);
         version = version.replaceAll("\\.", "_");
-        return firstChar + end + "_" + version;
-        //return firstChar + end;
+        //return firstChar + end + "_" + version;
+        return firstChar + end;
     }
 
 }

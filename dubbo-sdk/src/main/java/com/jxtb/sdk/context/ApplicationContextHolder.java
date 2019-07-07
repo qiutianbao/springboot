@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +14,7 @@ import static org.springframework.util.Assert.notNull;
 /**
  * Created by jxtb on 2019/6/13.
  */
-public class ApplicationContextHolder implements ApplicationContextAware,DisposableBean{
+public class ApplicationContextHolder implements ApplicationContextAware,InitializingBean,DisposableBean{
     private static Logger logger = LoggerFactory.getLogger(ApplicationContextHolder.class);
     private static ApplicationContext applicationContext = null;
 
@@ -81,4 +82,16 @@ public class ApplicationContextHolder implements ApplicationContextAware,Disposa
         return applicationContext.getBean(requiredType);
     }
 
+    public static void setContext(ApplicationContext context){
+        applicationContext = context;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        String[] names = applicationContext.getBeanDefinitionNames();
+        for (String name : names) {
+            System.out.println(">>>>>>" + name);
+        }
+        System.out.println("------\nBean 总计:" + applicationContext.getBeanDefinitionCount());
+    }
 }
