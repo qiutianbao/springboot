@@ -8,6 +8,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import static org.springframework.util.Assert.notNull;
 
@@ -31,6 +32,9 @@ public class ApplicationContextHolder implements ApplicationContextAware,Initial
      * 检查ApplicationContext不为空
      */
     private static void assertContextInjected() {
+        if(applicationContext == null){
+            applicationContext = new ClassPathXmlApplicationContext("spring/spring-context.xml");
+        }
         notNull(applicationContext,"应用上下分组件未初始化");
     }
 

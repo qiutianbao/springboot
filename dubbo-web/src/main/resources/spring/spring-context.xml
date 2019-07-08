@@ -7,6 +7,8 @@
         <property name="locations" value="#{systemProperties['env.files']?:'classpath:/conf/*properties'}"/>
     </bean>
 
+    <import resource="dubbo-client.xml"/>
+
     <bean class="com.jxtb.sdk.context.ApplicationContextHolder"/>
 
 </beans>
