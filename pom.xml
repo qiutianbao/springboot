@@ -37,6 +37,9 @@
         <module>boot-batch-common</module>
         <module>boot-batch-jxtb</module>
         <module>boot-batch-xml</module>
+        <module>boot-infrastructure</module>
+        <module>boot-maven-plugin</module>
+        <module>boot-webservice-cxf</module>
 
     </modules>
 
