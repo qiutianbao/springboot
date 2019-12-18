@@ -1,0 +1,62 @@
+2019-12-18 22:07:52.861 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper -
+                Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jxtb.mybatis.CommodityTest], using SpringBootContextLoader
+2019-12-18 22:07:52.877 [main] INFO  o.s.test.context.support.AbstractContextLoader -
+                Could not detect default resource locations for test class [com.jxtb.mybatis.CommodityTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-18 22:07:52.877 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils -
+                Could not detect default configuration classes for test class [com.jxtb.mybatis.CommodityTest]: CommodityTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-18 22:07:53.046 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper -
+                Found @SpringBootConfiguration com.jxtb.mybatis.MybatisApplication for test class com.jxtb.mybatis.CommodityTest
+2019-12-18 22:07:53.209 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper -
+                Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-18 22:07:53.240 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper -
+                Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5d0a1059, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@485966cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1de76cc7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@54bff557, org.springframework.test.context.support.DirtiesContextTestExecutionListener@593aaf41, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5a56cdac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c711375, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@57cf54e1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5b03b9fe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37d4349f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@434a63ab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e0f5f7f]
+2019-12-18 22:07:53.942 [main] INFO  com.jxtb.mybatis.CommodityTest -
+                Starting CommodityTest on DESKTOP-A9H6O5K with PID 13792 (started by jxtb in D:\project\back\personcode\springboot\boot-mybatis)
+2019-12-18 22:07:53.942 [main] INFO  com.jxtb.mybatis.CommodityTest -
+                No active profile set, falling back to default profiles: default
+2019-12-18 22:07:54.073 [main] INFO  o.s.w.context.support.GenericWebApplicationContext -
+                Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b8a29df: startup date [Wed Dec 18 22:07:54 CST 2019]; root of context hierarchy
+2019-12-18 22:07:55.290 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.jxtb.mybatis]' package. Please check your configuration.
+2019-12-18 22:07:56.183 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2828e370] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-18 22:07:57.749 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-18 22:07:58.232 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b8a29df: startup date [Wed Dec 18 22:07:54 CST 2019]; root of context hierarchy
+2019-12-18 22:07:58.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/json],produces=[application/json]}" onto public com.jxtb.mybatis.entity.Commodity com.jxtb.mybatis.controller.MybatisController.toIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-12-18 22:07:58.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/xml],produces=[application/xml]}" onto public com.jxtb.mybatis.entity.Commodity com.jxtb.mybatis.controller.MybatisController.xml(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-12-18 22:07:58.382 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/commodity]}" onto public com.jxtb.mybatis.entity.Commodity com.jxtb.mybatis.controller.MybatisController.getCommodity()
+2019-12-18 22:07:58.396 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-18 22:07:58.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-18 22:07:58.591 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-18 22:07:58.592 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-18 22:07:58.853 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler -
+                Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-12-18 22:07:58.855 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler -
+                Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-12-18 22:07:58.859 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler -
+                Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-12-18 22:07:58.867 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler -
+                Clear EntityHelper entityTableMap cache.
+2019-12-18 22:08:00.169 [main] INFO  com.jxtb.mybatis.CommodityTest -
+                Started CommodityTest in 6.874 seconds (JVM running for 8.493)
+2019-12-18 22:08:00.391 [main] INFO  com.jxtb.mybatis.CommodityTest -
+                这是info日志。。。
+2019-12-18 22:08:00.391 [main] WARN  com.jxtb.mybatis.CommodityTest -
+                这是warn日志。。。
+2019-12-18 22:08:00.392 [main] ERROR com.jxtb.mybatis.CommodityTest -
+                这是error日志。。。
+2019-12-18 22:08:00.605 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-12-18 22:08:01.111 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext -
+                Closing org.springframework.web.context.support.GenericWebApplicationContext@1b8a29df: startup date [Wed Dec 18 22:07:54 CST 2019]; root of context hierarchy
+2019-12-18 22:08:01.132 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed

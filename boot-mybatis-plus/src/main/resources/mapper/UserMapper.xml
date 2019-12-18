@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxtb.mp.dao.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxtb.mp.entity.User">
+        <id column="user_id" property="userId" />
+        <result column="name" property="name" />
+        <result column="age" property="age" />
+        <result column="manager_id" property="managerId" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        task_id, task_name, task_skip, status, subject_id, lifelong_task, state, create_time, update_time
+    </sql>
+
+    <select id="selectAllInfo" resultType="com.jxtb.mp.entity.User">
+        select * from sys_user
+        ${ew.customSqlSegment}
+    </select>
+    <select id="selectUserPage" resultType="com.jxtb.mp.entity.User">
+        select * from sys_user
+        ${ew.customSqlSegment}
+    </select>
+
+</mapper>

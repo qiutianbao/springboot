@@ -42,6 +42,7 @@
         <module>boot-sso-service</module>
         <module>boot-hutool</module>
         <module>boot-erm-maven-plugin</module>
+        <module>boot-mybatis-plus</module>
 
     </modules>
 

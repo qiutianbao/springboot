@@ -1,0 +1,18 @@
+#开发配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis_plus?characterEncoding=utf8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: jxtb
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+#mybatis-plus配置控制台打印完整带参数SQL语句
+  configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis-plus使用xlm
+  mapper-locations: mapper/*
+
+  global-config:
+    db-config:
+      logic-not-delete-value: 0 #逻辑删除标识(：未删除
+      logic-delete-value: 1 #逻辑删除标识1：已删除
